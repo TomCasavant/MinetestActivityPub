@@ -7,10 +7,6 @@ local http = minetest.request_http_api()
 -- Player data
 local pldatadir=webchatdir.."/playerdata"
 local last_message_id = 0
--- Files in playerdata/<plname>/ directories:
---   lastseen                             1611343962 game  Contains timestamp (Unix epoch) and type of last activity
---   game_is_online   webchat_is_online   1609018688       File exists only while player is online and contains the timestamp of his last activity
---   game_player.log  website_player.log  1611349823 join  Log of player game/website events
 
 minetest.mkdir(webchatdir)
 
